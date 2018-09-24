@@ -1,76 +1,66 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-
-By: Almada Pablo E.
+Por: Almada Pablo E.
 -->
 <html>
     <head>
         <title>Conocimientos de Materiales</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="estilo.css">
         <script type="text/javascript" src="javascript.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-        
+
     </head>
     <body>
-        <h3 align="center">Diagrama de Fases Al-Zn</h3>
-        
-        <div class="principal">
-              
-        <!--<img src="img/diagrama.png" alt="" usemap="#mapa" height="1000" width="707">
-                <map class="mapa" name="mapa">
-                
-                    <area class="unolento" shape="circle" coords="125,347,35" title="10% Lento" alt="10%1" href="#" target="_self" data-image="img/unolento.bmp">
-                    <area class="unorapido" shape="circle" coords="125,418,35" title="10% Rápido" alt="10%2" href="#" target="_self" data-image="img/unorapido.bmp">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>
+                        <a class="blog-header-logo text-dark" href="#">Diagrama de Fases Al-Zn</a>
+                    </h3>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-12 text-center autor">
+                    <p>By: Almada Pablo E. - 2018</p>
+                </div> 
+            </div>
+        </div>
 
-                </map> -->
-        </div>
-        
-        
-        <div class="secundario">
-            <div class="coluno">
-                <ul>
-                    <li>
-                    <input type="button" value="10% - Lento" onclick="unolento();"/>
-                    <input type="button" value="10% - Rápido" onclick="unorapido();"/>
-                </li>
-                <li>
-                    <input type="button" value="20% - Lento" onclick="doslento();"/>
-                    <input type="button" value="20% - Rápido" onclick="dosrapido();"/>
-                </li>
-                <li>
-                    <input type="button" value="30% - Lento" onclick="treslento();"/>
-                    <input type="button" value="30% - Rápido" onclick="tresrapido();"/>
-                </li>
-                <li>
-                    <input type="button" value="35% - Lento" onclick="trescincolento();"/>
-                    <input type="button" value="35% - Rápido" onclick="trescincorapido();"/>
-                </li>
-                </ul> 
-            </div>
-            <div class="coldos"><ul>
-                <li>
-                    <input type="button" value="40% - Lento" onclick="cuatrolento();"/>
-                    <input type="button" value="40% - Rápido" onclick="cuatrorapido();"/>
-                </li>
-                <li>
-                    <input type="button" value="50% - Lento" onclick="cincolento();"/>
-                    <input type="button" value="50% - Rápido" onclick="cincorapido();"/>
-                </li>
-                <li>
-                    <input type="button" value="95% - Lento" onclick="nuevecincolento();"/>
-                    <input type="button" value="95% - Rápido" onclick="nuevecincorapido();"/>
-                </li>
-                </ul></div>
-            <div class="aumento">
-                <img  id="img" src="" alt="" width="575" height="575"/>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg principal" style="padding:0">
+                    <img src="img/diagrama.png" alt="" usemap="#mapa" height="1000" width="707" class="img-responsive">
+                    <map class="mapa" name="mapa">
+
+                        <area shape="circle" coords="125,347,35" title="10% Lento" alt="1" href="#" target="_self" onclick="unolento();">
+                        <area shape="circle" coords="125,418,35" title="10% Rápido" alt="1" href="#" target="_self" onclick="unorapido();">
+                        <area shape="circle" coords="185,118,35" title="20% Lento" alt="1" href="#" target="_self" onclick="doslento();">
+                        <area shape="circle" coords="185,189,35" title="20% Rápido" alt="1" href="#" target="_self" onclick="dosrapido();">
+                        <area shape="circle" coords="278,118,35" title="35% Lento" alt="1" href="#" target="_self" onclick="trescincolento();">
+                        <area shape="circle" coords="278,189,35" title="35% Rápido" alt="1" href="#" target="_self" onclick="trescincorapido();">
+                        <area shape="circle" coords="371,118,35" title="50% Lento" alt="1" href="#" target="_self" onclick="cincolento();">
+                        <area shape="circle" coords="371,189,35" title="50% Rápido" alt="1" href="#" target="_self" onclick="cincorapido();">
+                        <area shape="circle" coords="249,359,30" title="30% Lento" alt="1" href="#" target="_self" onclick="treslento();">
+                        <area shape="circle" coords="249,422,30" title="30% Rápido" alt="1" href="#" target="_self" onclick="tresrapido();">
+                        <area shape="circle" coords="310,359,30" title="40% Lento" alt="1" href="#" target="_self" onclick="cuatrolento();">
+                        <area shape="circle" coords="310,422,30" title="40% Rápido" alt="1" href="#" target="_self" onclick="cuatrorapido();">
+                        <area shape="circle" coords="646,123,30" title="95% Lento" alt="1" href="#" target="_self" onclick="nuevecincolento();">
+                        <area shape="circle" coords="646,187,30" title="95% Rápido" alt="1" href="#" target="_self" onclick="nuevecincorapido();">
+                    </map>
+                </div>
+                <div class="col-lg secundario" style="padding:0">
+                    <div class="aumento">
+                            <img  id="img" src="" alt="" width="500" height="500"/>
+                    </div>
+                </div>
             </div>
         </div>
-                <div class="autor"><p>By: Almada Pablo E. - 2018</p></div>
-        
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
